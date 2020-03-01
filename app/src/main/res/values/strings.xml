@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Deyaka</string>
+    <string name="my_kids_toolbar_title">My Kids</string>
+    <string name="kid_name">Kid Name</string>
+    <!--ward details  strings-->
+    <string name="org_name">Organisation</string>
+    <string name="term">Term (standard)</string>
+    <string name="section">Section</string>
+    <string name="dob">Date of Birth</string>
+    <string name="house_color">House Color</string>
+    <string name="father_name">Father Name</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_id">Email Id</string>
+    <!--**********installment fee********************************-->
+    <string name="installment_fees">Installment Fees</string>
+    <string name="paid_date">Paid Date</string>
+    <string name="fee_due_date">Fee Due Date</string>
+    <string name="installment_payment_status">Payment Status</string>
+    <string name="view_details">View Details</string>
+    <string name="pay_now">Pay Now</string>
+    <!--paymnet status-->
+    <string name="paid">Paid</string>
+    <string name="pending">Not Paid</string>
+    <!--Main Titles Fee-->
+    <string name="total_fees">Total Fees</string>
+    <string name="total_installment">Total Installment</string>
+    <string name="installment_fees_main">Installment Fees</string>
+    <!--Payment Details Page-->
+    <string name="toolbar_title">Payment Details</string>
+    <string name="installment_name">Installment Title</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="fee_amount">Rs. 0000</string>
+
+    <string name="amount">Amount</string>
+    <string name="amount_in_words">Amount in Words</string>
+    <!--payment details-->
+    <string name="toolbar_title_Payment_details">Payment Details</string>
+    <string name="fee_type_pd">Installment1</string>
+    <string name="fee_status_pd">Paid</string>
+    <string name="fee_amount_pd">Rs. 10,000</string>
+    <string name="amount_pd">Amount</string>
+    <string name="amount_in_words_pd">Amount in Words</string>
+    <string name="paid_date_pd">Paid Date</string>
+    <string name="invoice_name_pd">Invoice Name</string>
+    <string name="txn_id">Transaction ID</string>
+    <string name="recipt_no_pd">Receipt No.</string>
+    <string name="payment_mode_pd">Payment Mode</string>
+    <string name="invoice_no_pd">Invoice No.</string>
+
+    <!--other fees************************************************-->
+    <string name="other_fee_toolbar_title">Other Fees</string>
+    <!--pay now payment option popup-->
+    <string name="pay_by_cash">Pay by Cash</string>
+    <string name="pay_by_cheque">Pay by Cheque</string>
+    <string name="pay_online">Pay by Online</string>
+    <string name="choose_your_desired_date">Choose your desired Date</string>
+    <string name="amount_cash">Amount</string>
+    <string name="amount_hint_cash">Enter the Amount</string>
+    <string name="cheque_no">Cheque No.</string>
+    <string name="enter_your_chq_no">Enter Your Cheque Number</string>
+    <string name="Name_chq">Name</string>
+    <string name="enter_the_name_on_cheque">Enter the Name on Cheque</string>
+    <string name="bank">Bank</string>
+    <string name="enter_the_bank_name">Enter the Bank Name</string>
+    <string name="branch">Branch</string>
+    <string name="enter_the_branch_name">Enter the Branch Name</string>
+    <string name="date_fee">Payment Date</string>
+    <string name="enter_paid_date">Enter date dd/mm/yyyy </string>
+    <!--payment history-->
+    <string-array name="years">
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+    </string-array>
+    <string name="year_name_parent">2000</string>
+    <string name="installment_name_pay_hist">Uniform Fees</string>
+    <string name="pay_hist_amount">Rs. 10,000.00</string>
+    <string name="pay_hist_tool_bar">Payment History</string>
+    <!--News and Events-->
+    <string name="news_and_events">News &amp; Events</string>
+    <string name="sample_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the sample text sample textLorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <!--My Kids Home Page-->
+    <string name="my_kids_hp">My Kids</string>
+    <string name="nws_nd_evnts_hp">News and Events</string>
+    <string name="fees_hp">Fees</string>
+    <string name="pay_hist_hp">Payment History</string>
+    <string name="other_fees_hp">Other Fees</string>
+    <!--Logout-->
+    <string name="logout">Logout</string>
+    <!--payment successful-->
+    <string name="payment_successful">Payment Successful</string>
+    <string name="payment_processed">Your payment was successfully processed</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="home">Home</string>
+    <string name="payment_failure">Payment Failure</string>
+    <string name="payment_failed">Sorry your payment has been failed please try other method</string>
+
+    <!--login isgn up-->
+    <string name="enterotp">Enter OTP</string>
+    <string name="enterotptonumber">Enter the OTP sent to "998877665544"</string>
+    <string name="waittext">Please wait,you will get OTP via SMS </string>
+    <string name="resendtime">00:60</string>
+    <string name="verify">Verify</string>
+    <string name="createnewpassword">Create New Password</string>
+    <string name="newpasswordinfo">Please don\'t share the password with anyone</string>
+    <string name="newpassword">New Password</string>
+    <string name="typehere">Type here..</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="updatepassword">Update Password</string>
+    <string name="passwordchanged">Password changed</string>
+    <string name="passwordchangedsuccessful">Congratulations!You have successfully changed your password</string>
+    <string name="passwordupdatesuccessful">Password successfully updated</string>
+    <string name="backtologin">Back to Login</string>
+    <string name="recoverpassword">Recover Password</string>
+    <string name="selectcredentials">Select one of any credentials which should we use for recover your password</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="sendotp">Send OTP</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="signintext">Please enter parent\'s phone number and password</string>
+    <string name="signuptext">Don\'t have Account? <font color="#428DFF">Sign Up</font></string>
+    <string name="password">Password</string>
+    <string name="forgotpassword">Forgot password?</string>
+    <string name="nootpreceive">Didn\'t receive OTP?</string>
+    <string name="resendotp">Resend otp</string>
+    <string name="verifyandcontinue">Verify and continue</string>
+    <string name="deyaka_solu">Deyaka Solutions Pvt. Ltd</string>
+    <string name="have_smthng_to_tell_us">Have something to tell us?Submit your feedback</string>
+    <string name="terms_conditions_msg">Deyaka will not disclose, transfer, sell, trade, rent, or otherwise provide your Personal Information to any third party, without your consent. Deyaka may use third party contractors to provide certain services and perform functions on our behalf.</string>
+    <string name="pay_desc">Payment Description</string>
+    <string name="kid_name_pay_desc">Kid\'s Name</string>
+    <string name="please_try_again">Network Connection error! Please try again later</string>
+    <string name="admin_needs_to_approve">Admin needs to approve</string>
+    <string name="please_contact_school_admin">Please contact school admin</string>
+</resources>

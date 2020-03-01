@@ -1,0 +1,203 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+
+    <style name="noAnimTheme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- for disabling animate layout for black screean appearance-->
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/purle</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="android:textSize">@dimen/fourteen_sp</item>
+    </style>
+
+    <style name="tabTextAppearance">
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:textSize">@dimen/fourteen_sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="tabTextAppearanceNewsEvents">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+    </style>
+
+    <style name="ward_details_textview">
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:textColor">@color/gray_b</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:padding">@dimen/eight_dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="ward_details_textview_title">
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:textColor">@color/gray_b</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:padding">@dimen/eight_dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="fee_installment_name">
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+    </style>
+
+    <style name="fee_item_title">
+        <item name="android:textColor">@color/gray_b</item>
+        <item name="android:textSize">@dimen/seventeen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+    </style>
+
+    <style name="fee_button">
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+    </style>
+
+    <style name="fee_item_values">
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:textSize">@dimen/seventeen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+    </style>
+
+    <style name="MyThemeOverlay">
+        <item name="android:colorAccent">@color/red</item>
+    </style>
+
+    <style name="payment_status_value">
+        <item name="android:textSize">@dimen/seventeen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+        <item name="android:paddingTop">@dimen/three_dp</item>
+        <item name="android:paddingRight">@dimen/twelve_dp</item>
+        <item name="android:paddingLeft">@dimen/twelve_dp</item>
+    </style>
+
+    <style name="fee_total_contents">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingBottom">@dimen/eight_dp</item>
+    </style>
+
+    <style name="fee_total_contents_values">
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingBottom">@dimen/eight_dp</item>
+    </style>
+
+    <style name="payment_details_header">
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+    </style>
+
+    <style name="pd_row_title">
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:textColor">@color/gray_5</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+    </style>
+
+    <style name="pd_row_value">
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+    </style>
+
+    <style name="payment_option_text">
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="PaymentTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#C4C4C4</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+    </style>
+
+    <style name="toolbar_title">
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="pay_hist_parent">
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:paddingTop">@dimen/five_dp</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+    </style>
+
+    <style name="year_drop_down">
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+    </style>
+
+    <style name="news_events_item_title">
+        <item name="android:textColor">@color/purle</item>
+        <item name="android:textSize">@dimen/eighteen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/calibri_bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingBottom">@dimen/eight_dp</item>
+    </style>
+
+    <style name="news_events_item_desc">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/calibri_regular</item>
+        <item name="android:paddingBottom">@dimen/five_dp</item>
+    </style>
+
+    <!--new styles-->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="deyaka_solu">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

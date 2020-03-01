@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "491596388256",
+    "firebase_url": "https://deyaka-72f7a.firebaseio.com",
+    "project_id": "deyaka-72f7a",
+    "storage_bucket": "deyaka-72f7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491596388256:android:1664a9b7f7acbce79bb6c5",
+        "android_client_info": {
+          "package_name": "com.app.deyaka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491596388256-hqrk6s1l1vtbbp3tj114eg6igdsgrsv2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.deyaka",
+            "certificate_hash": "caaaf46354d1ef5adb035247bcaac2e643a31fe6"
+          }
+        },
+        {
+          "client_id": "491596388256-0jenojnpp6ilhnjgvivh8r9nrjo4h32i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHFodgI057obTVjxntI6NvdhaQQVvwMJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491596388256-0jenojnpp6ilhnjgvivh8r9nrjo4h32i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

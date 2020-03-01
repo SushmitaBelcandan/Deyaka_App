@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/five_dp"
+    app:cardCornerRadius="@dimen/five_dp"
+    app:cardElevation="@dimen/five_dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/eight_dp">
+
+
+        <TextView
+            android:id="@+id/tvTitleEvents"
+            style="@style/news_events_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="School Fee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDescEvents"
+                style="@style/news_events_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sample_text" />
+
+            <WebView
+                android:id="@+id/wvLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:paddingTop="5dp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

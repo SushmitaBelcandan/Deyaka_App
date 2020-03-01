@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llkidsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_4"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:id="@+id/svKidsDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_kid_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="center"
+                            android:src="@drawable/images" />
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbarKidsDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@android:color/transparent"
+                            android:theme="@style/ToolbarColoredBackArrow"
+                            app:contentInsetLeft="0dp"
+                            app:contentInsetRight="0dp"
+                            app:contentInsetStartWithNavigation="0dp"
+                            app:navigationIcon="?attr/homeAsUpIndicator"
+                            app:subtitle=""
+                            app:title="" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvLogo"
+                                    android:layout_width="100dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/custom_shape_slope"
+                                    android:fontFamily="@font/calibri_regular" />
+
+                                <TextView
+                                    android:id="@+id/tv_school_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvLogo"
+                                    android:background="@color/gray_2"
+                                    android:fontFamily="@font/calibri_regular"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="School name"
+                                    android:textColor="@color/purle"
+                                    android:textSize="@dimen/fourteen_sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="5dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardUseCompatPadding="true">
+
+                                    <ImageView
+                                        android:id="@+id/iv_school_logo"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/broken_image" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_kid_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_4"
+                        android:fontFamily="@font/calibri_bold"
+                        android:paddingLeft="@dimen/twelve_dp"
+                        android:paddingTop="@dimen/ten_dp"
+                        android:paddingRight="@dimen/twelve_dp"
+                        android:paddingBottom="@dimen/ten_dp"
+                        android:text="@string/kid_name"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/tweenty_sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_4"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/org_name" />
+
+                        <TextView
+                            android:id="@+id/tv_org_name"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/term" />
+
+                        <TextView
+                            android:id="@+id/tv_term"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/section" />
+
+                        <TextView
+                            android:id="@+id/tv_section"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9"
+                            android:text="@string/dob" />
+
+                        <TextView
+                            android:id="@+id/tv_dob"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9"
+                            android:text="@string/house_color" />
+
+                        <TextView
+                            android:id="@+id/tv_house_color"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9"
+                            android:text="@string/father_name" />
+
+                        <TextView
+                            android:id="@+id/tv_father_name"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9"
+                            android:text="@string/mother_name" />
+
+                        <TextView
+                            android:id="@+id/tv_mother_name"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9"
+                            android:text="@string/mobile_number" />
+
+                        <TextView
+                            android:id="@+id/tv_mobile_number"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ward_details_textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9"
+                            android:text="@string/email_id" />
+
+                        <TextView
+                            android:id="@+id/tv_email_id"
+                            style="@style/ward_details_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTryAgain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarKidsDetails1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:theme="@style/ToolbarColoredBackArrow"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:subtitle=""
+            app:title="" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/slow_network_icon" />
+
+        <TextView
+            android:id="@+id/btnTryAgain"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:fontFamily="@font/roboto_regular"
+            android:justificationMode="inter_word"
+            android:padding="@dimen/eight_dp"
+            android:text="@string/please_try_again"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+</LinearLayout>

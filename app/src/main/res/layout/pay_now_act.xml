@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPayNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:subtitle=""
+        app:title="@string/pay_desc"
+        app:titleTextAppearance="@style/toolbar_title"
+        app:titleTextColor="@color/purle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/tweenty_dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/tweenty_dp"
+                    android:paddingTop="@dimen/eight_dp"
+                    android:paddingRight="@dimen/tweenty_dp"
+                    android:paddingBottom="@dimen/eight_dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/calibri_bold"
+                        android:gravity="left"
+                        android:text="@string/kid_name"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvKidName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="right"
+                        android:text="sample"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/tweenty_dp"
+                    android:paddingTop="@dimen/five_dp"
+                    android:paddingRight="@dimen/tweenty_dp"
+                    android:paddingBottom="@dimen/five_dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/calibri_bold"
+                        android:gravity="left"
+                        android:text="Kid's Class"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvSchlName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="right"
+                        android:text="sample"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/tweenty_dp"
+                    android:paddingTop="@dimen/five_dp"
+                    android:paddingRight="@dimen/tweenty_dp"
+                    android:paddingBottom="@dimen/five_dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/calibri_bold"
+                        android:gravity="left"
+                        android:text="Fee Name"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvFeeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="right"
+                        android:text="sample"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/tweenty_dp"
+                    android:paddingTop="@dimen/five_dp"
+                    android:paddingRight="@dimen/tweenty_dp"
+                    android:paddingBottom="@dimen/five_dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/calibri_bold"
+                        android:gravity="left"
+                        android:text="Fee Amount"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvFeeAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="right"
+                        android:text="sample"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/tweenty_dp"
+                    android:paddingTop="@dimen/five_dp"
+                    android:paddingRight="@dimen/tweenty_dp"
+                    android:paddingBottom="@dimen/five_dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/calibri_bold"
+                        android:gravity="left"
+                        android:text="Date"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+
+                    <TextView
+                        android:id="@+id/tvPaidDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:fontFamily="@font/calibri_regular"
+                        android:gravity="right"
+                        android:text="sample"
+                        android:textColor="@color/purle"
+                        android:textSize="@dimen/eighteen_sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/thirty_dp"
+                android:paddingTop="@dimen/tweenty_dp"
+                android:paddingRight="@dimen/thirty_dp"
+                android:paddingBottom="@dimen/tweenty_dp">
+
+                <Button
+                    android:id="@+id/btnPayNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/red_bg_rounded_corner"
+                    android:fontFamily="@font/calibri_bold"
+                    android:padding="@dimen/five_dp"
+                    android:text="Pay Now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/eighteen_sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

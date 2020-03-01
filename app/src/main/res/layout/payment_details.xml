@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_4"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_view_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white1"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/toolbar_title_Payment_details"
+        app:titleTextColor="@color/purle"
+        app:titleTextAppearance="@style/toolbar_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white1"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/calibri_regular"
+                android:gravity="center|top"
+                android:text="No Payment Details"
+                android:textColor="@color/purle"
+                android:textSize="@dimen/sixteen_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPayDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fifteen_dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/upr_round_corner"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/twelve_dp">
+
+                        <TextView
+                            android:id="@+id/tvInstallmentTitleHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/calibri_regular"
+                            android:gravity="left"
+                            android:text="@string/fee_type_pd"
+                            android:textColor="@color/purle"
+                            android:textSize="@dimen/sixteen_sp" />
+
+                        <TextView
+                            android:id="@+id/tvPayStatusHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/calibri_regular"
+                            android:text="@string/fee_status_pd"
+                            android:textAlignment="center"
+                            android:textColor="@color/green1"
+                            android:textSize="@dimen/sixteen_sp" />
+
+                        <TextView
+                            android:id="@+id/tvInstallmentAmountHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/calibri_regular"
+                            android:text="@string/fee_amount_pd"
+                            android:textAlignment="center"
+                            android:textColor="@color/purle"
+                            android:textSize="@dimen/sixteen_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom_round_corner"
+                        android:orientation="vertical"
+                        android:padding="@dimen/twelve_dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/payment_details_header"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/amount_pd" />
+
+                            <TextView
+                                android:id="@+id/tvAmountNumBody"
+                                style="@style/payment_details_header"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="Rs. 10,000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/pd_row_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/amount_in_words_pd" />
+
+                            <TextView
+                                android:id="@+id/tvAmountWordsBody"
+                                style="@style/pd_row_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="Rs. 10,000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/pd_row_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/paid_date_pd" />
+
+                            <TextView
+                                android:id="@+id/tvPaidDateBody"
+                                style="@style/pd_row_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="12 Dec 2019" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/pd_row_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/invoice_name_pd" />
+
+                            <TextView
+                                android:id="@+id/tvInvoiceNameBody"
+                                style="@style/pd_row_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="Some Text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/pd_row_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/txn_id" />
+
+                            <TextView
+                                android:id="@+id/tvTxnIdBody"
+                                style="@style/pd_row_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="XXXXXX" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/pd_row_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/recipt_no_pd" />
+
+                            <TextView
+                                android:id="@+id/tvReceiptNumBody"
+                                style="@style/pd_row_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="XXXXXX" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/pd_row_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/payment_mode_pd" />
+
+                            <TextView
+                                android:id="@+id/tvPayModeBody"
+                                style="@style/pd_row_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="Net Banking" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/pd_row_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/invoice_no_pd" />
+
+                            <TextView
+                                android:id="@+id/tvInvoiceNumBody"
+                                style="@style/pd_row_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="XXXXX" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llTryAgain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slow_network_icon" />
+
+        <TextView
+            android:id="@+id/btnTryAgain"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri_regular"
+            android:gravity="center_vertical|center_horizontal"
+            android:justificationMode="inter_word"
+            android:padding="@dimen/eight_dp"
+            android:text="@string/please_try_again"
+            android:textAllCaps="false"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+</LinearLayout>

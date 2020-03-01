@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/enterotp"
+                android:textColor="@color/textfieldblack"
+                android:textSize="24dp"
+               android:fontFamily="@font/calibri_bold" />
+
+            <TextView
+                android:id="@+id/tv_enter_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text=""
+                android:textColor="@color/textfieldblack"
+                android:textSize="16dp"
+                android:fontFamily="@font/calibri_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextone"
+                    android:layout_width="40sp"
+                    android:layout_height="42sp"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/textfieldblack"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:nextFocusRight="@+id/editTexttwo"
+                    android:fontFamily="@font/calibri_bold"/>
+
+                <EditText
+                    android:id="@+id/editTexttwo"
+                    android:layout_width="40sp"
+                    android:layout_height="42sp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:nextFocusRight="@+id/editTextthree"
+                    android:fontFamily="@font/calibri_bold"/>
+
+                <EditText
+                    android:id="@+id/editTextthree"
+                    android:layout_width="40sp"
+                    android:layout_height="42sp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:nextFocusRight="@+id/editTextfour"
+                    android:fontFamily="@font/calibri_bold"/>
+
+                <EditText
+                    android:id="@+id/editTextfour"
+                    android:layout_width="40sp"
+                    android:layout_height="42sp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:fontFamily="@font/calibri_bold"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:fontFamily="@font/calibri_regular"
+                android:text="@string/waittext"
+                android:textColor="@color/black_2"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_timer"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/resendtime"
+                        android:textColor="@color/textblack"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/calibri_bold"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/dr_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nootpreceive"
+                android:textColor="#A3A3A3"
+                android:visibility="gone"
+                android:fontFamily="@font/calibri_regular"/>
+
+            <TextView
+                android:id="@+id/resendotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/resendotp"
+                android:textColor="#0197D9"
+                android:visibility="gone"
+                android:fontFamily="@font/calibri_regular"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/twelve_dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/verify_and_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ten_dp"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/fifteen_dp"
+                android:text="@string/verifyandcontinue"
+                android:textAllCaps="false"
+                android:textColor="@color/purewhite"
+                android:fontFamily="@font/calibri_bold"
+                android:textSize="@dimen/eighteen_sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play_arrow_white_24dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homeline" />
+    </LinearLayout>
+</RelativeLayout>

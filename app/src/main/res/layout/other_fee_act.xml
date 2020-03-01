@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_4"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_other_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white1"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/other_fee_toolbar_title"
+        app:titleTextColor="@color/purle"
+        app:titleTextAppearance="@style/toolbar_title"
+        />
+
+    <LinearLayout
+        android:id="@+id/llOtherFee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvEmptyList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/calibri_regular"
+                    android:gravity="center"
+                    android:text="Empty Fees List"
+                    android:textColor="@color/purle"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:visibility="gone" />
+
+                <com.mindorks.placeholderview.PlaceHolderView
+                    android:id="@+id/phvOtherFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/five_dp"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:background="@color/white1"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTryAgain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slow_network_icon" />
+
+        <TextView
+            android:id="@+id/btnTryAgain"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri_regular"
+            android:gravity="center_vertical|center_horizontal"
+            android:justificationMode="inter_word"
+            android:padding="@dimen/eight_dp"
+            android:text="@string/please_try_again"
+            android:textAllCaps="false"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+</LinearLayout>

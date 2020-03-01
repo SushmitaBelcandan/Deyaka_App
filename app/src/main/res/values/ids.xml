@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_title_org_name" type="id"/>
+    <item name="tv_title_term" type="id"/>
+    <item name="tv_title_section" type="id"/>
+    <item name="tv_title_dob" type="id"/>
+    <item name="tv_title_house_color" type="id"/>
+    <item name="tv_title_father_name" type="id"/>
+    <item name="tv_title_mother_name" type="id"/>
+    <item name="tv_title_mobile_number" type="id"/>
+    <item name="tv_title_email_id" type="id"/>
+</resources>

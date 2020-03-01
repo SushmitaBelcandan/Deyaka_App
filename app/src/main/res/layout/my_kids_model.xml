@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_kid"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#2FD498"
+    app:cardCornerRadius="@dimen/ten_dp"
+    app:cardElevation="@dimen/ten_dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/five_dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:padding="2dp">
+
+            <com.zuowei.circleimageview.CircleImageView
+                android:id="@+id/iv_kid"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/ten_dp"
+            android:paddingRight="@dimen/ten_dp"
+            android:paddingBottom="@dimen/ten_dp">
+
+            <TextView
+                android:id="@+id/tv_kid_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/calibri_bold"
+                android:gravity="left"
+                android:text="Kid Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <TextView
+                android:id="@+id/tv_class_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/calibri_regular"
+                android:gravity="left"
+                android:paddingTop="@dimen/five_dp"
+                android:text="Class: xx"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteen_sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

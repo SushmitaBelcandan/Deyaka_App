@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_kid_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingBottom="@dimen/five_dp"
+        app:cardBackgroundColor="#C3A7EA"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/five_dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:paddingLeft="@dimen/thirty_dp"
+                android:paddingTop="28dp"
+                android:paddingRight="@dimen/thirty_dp"
+                android:paddingBottom="28dp">
+
+                <ImageView
+                    android:id="@+id/ivKidImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/my_kids" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <TextView
+            android:id="@+id/tvKidName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/calibri_regular"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/my_kids_hp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_sp" />
+    </LinearLayout>
+</LinearLayout>
