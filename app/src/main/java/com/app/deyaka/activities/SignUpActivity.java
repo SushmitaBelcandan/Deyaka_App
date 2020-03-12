@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +18,6 @@ import com.app.deyaka.R;
 import com.app.deyaka.adapters.Utils;
 import com.app.deyaka.retrofit.APIClient;
 import com.app.deyaka.retrofit.APIInterface;
-import com.app.deyaka.retrofit.LoginRequest;
 import com.app.deyaka.retrofit.SignUpRequest;
 import com.app.deyaka.session_management.SessionManager;
 import com.google.android.gms.auth.api.phone.SmsRetriever;
@@ -28,8 +28,12 @@ import com.google.android.gms.tasks.Task;
 import com.rilixtech.Country;
 import com.rilixtech.CountryCodePicker;
 
+import java.lang.ref.WeakReference;
 import java.util.List;
 
+import io.michaelrocks.libphonenumber.android.NumberParseException;
+import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
+import io.michaelrocks.libphonenumber.android.Phonenumber;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -61,12 +65,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         btn_signup.setOnClickListener(this);
         ccp = (CountryCodePicker) findViewById(R.id.ccp_sign_up);
-        et_countrycodesignup.setText(ccp.getSelectedCountryCodeWithPlus());
+        et_countrycodesignup.setText(ccp.getSelectedCountryNameCode());
 
         ccp.setOnCountryChangeListener(new CountryCodePicker.OnCountryChangeListener() {
             @Override
             public void onCountrySelected(Country country) {
-                et_countrycodesignup.setText(ccp.getSelectedCountryCodeWithPlus());
+                et_countrycodesignup.setText(ccp.getSelectedCountryNameCode());
             }
         });
     }
@@ -81,9 +85,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 if (Utils.CheckInternetConnection(getApplicationContext()) && !sMobile.isEmpty() && sMobile.length() == 10) {
                     verifysuccess();
                 } else if (sMobile.isEmpty() || sMobile == null || sMobile.length() != 10) {
+
                     etphonenumber.setText("");
                     etphonenumber.setError("Enter correct mobile number");
                 } else {
+
                     Toast.makeText(getApplicationContext(), "Please check internet connection", Toast.LENGTH_SHORT).show();
                 }
         }

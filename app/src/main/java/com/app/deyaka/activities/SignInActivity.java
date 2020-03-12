@@ -38,6 +38,7 @@ import com.rilixtech.CountryCodePicker;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -123,7 +124,6 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.send_otp:
-
                 smobile_no = et_phonenumber.getText().toString();
                 spassword = et_password.getText().toString();
                 scountry_code = et_countrycode.getText().toString().replace("+", "");

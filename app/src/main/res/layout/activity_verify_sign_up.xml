@@ -52,6 +52,7 @@
                     android:gravity="center"
                     android:imeOptions="actionNext"
                     android:inputType="number"
+                    android:digits="0123456789"
                     android:maxLength="1"
                     android:textColor="@color/textfieldblack"
                     android:textSize="@dimen/sixteen_sp"

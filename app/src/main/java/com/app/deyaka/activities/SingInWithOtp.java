@@ -109,7 +109,7 @@ public class SingInWithOtp extends AppCompatActivity implements View.OnClickList
 
         device_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
 
-        // token = saveInPref.getToken();
+        token = saveInPref.getToken();
         token = FirebaseInstanceId.getInstance().getToken();
         // Toast.makeText(SingInWithOtp.this, "Refresh token -  " + token, Toast.LENGTH_SHORT).show();
 

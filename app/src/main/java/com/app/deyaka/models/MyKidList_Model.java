@@ -17,9 +17,10 @@ import com.mindorks.placeholderview.annotations.Layout;
 import com.mindorks.placeholderview.annotations.NonReusable;
 import com.mindorks.placeholderview.annotations.Resolve;
 import com.mindorks.placeholderview.annotations.View;
-import com.zuowei.circleimageview.CircleImageView;
 
 import java.util.Random;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 @NonReusable
